@@ -221,7 +221,7 @@
       clickPlayerButton("play-pause", resume === false ? "playing" : null, resume ? "playing" : null);
       break;
     case "nextSong":
-      clickPlayerButton("forward");
+      setPositionPercent("#material-player-progress", 100);
       break;
     case "prevSong":
       clickPlayerButton("rewind");
