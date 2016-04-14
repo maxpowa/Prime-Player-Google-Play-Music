@@ -2223,6 +2223,7 @@ function fixForUri(string) {
 
     if (info) {
       info.durationSec = parseSeconds(info.duration);
+      if (info.artistLink == "artist//Subscribe+to+go+ad-free") this.setSongPosition(100);
       if (settings.toast) openToastIfNeeded();
       if (!settings.hideRatings || settings.showLastfmInfo) loadCurrentLastfmInfo();
     } else closeToast();
